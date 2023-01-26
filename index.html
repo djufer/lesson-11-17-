@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="block top">
+            <div class="top-full-date">
+                <div class="top-date"></div>
+                <div>.</div>
+                <div class="top-month"></div>
+                <div>.</div>
+                <div class="top-year"></div>
+            </div>
+            <div class="top-time">
+                <div class="top-hour"></div>
+                <div class="ddot">:</div>
+                <div class="top-minutes"></div>
+                <div class="ddot">:</div>
+                <div class="top-seconds"></div>
+            </div>
+        </div>
+        <div class="block center">
+            <div class="center-left">
+                <div class="stopwatch">
+                    <div class="stopwatch-hours">00</div>
+                    <div>:</div>
+                    <div class="stopwatch-minutes">00</div>
+                    <div>:</div>
+                    <div class="stopwatch-seconds">00</div>
+                    <div>:</div>
+                    <div class="stopwatch-miliseconds">000</div>
+                </div>
+                <div class="stopwatch-buttons">
+                    <button class="stopwatch-start" onclick="start()">
+                        start
+                    </button>
+                    <button class="stopwatch-loop" onclick="loop()" disabled>
+                        loop
+                    </button>
+                    <button class="stopwatch-stop" onclick="stop()" disabled>
+                        stop
+                    </button>
+                    <button class="stopwatch-reset" onclick="reset()" disabled>
+                        reset
+                    </button>
+                </div>
+            </div>
+            <div class="center-right">
+                <ul class="loops"></ul>
+            </div>
+        </div>
+        <div class="block bottom">
+            <div class="bottom-left">
+                <div class="num-of-minutes">10</div>
+                <div class="span-minutes">minutes</div>
+                <div class="timer-buttons-left">
+                    <button class="plus">+</button>
+                    <button class="minus">-</button>
+                </div>
+            </div>
+            <div class="bottom-right">
+                <div class="timer">
+                    <div class="timer-minutes">00</div>
+                    <div>:</div>
+                    <div class="timer-seconds">00</div>
+                </div>
+                <div class="timer-buttons-right">
+                    <button class="start-timer" onclick="startTimer()">
+                        start
+                    </button>
+                    <button class="stop-timer" onclick="stopTimer()" disabled>
+                        stop
+                    </button>
+                    <button class="reset-timer" onclick="resetTimer()" disabled>
+                        reset
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
